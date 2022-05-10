@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
-This project used [NGZORRO](https://ng.ant.design/docs/introduce/en) version 13.2.1.
+This project used [NG-ZORRO](https://ng.ant.design/docs/introduce/en) version 13.2.1.
 
 ## Development server
 
