@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    padding: 15px;
+    height: 100vh;
+}
+
+.item-center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-form {
+    max-width: 300px;
+    width: 320px;
+}
+
+.login-form-margin {
+    margin-bottom: 16px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.img-logo-center {
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+}
+
+.img-logo-center img {
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.copyright {
+    margin-top: 25px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright a {
+    // color: #f39748;
+}

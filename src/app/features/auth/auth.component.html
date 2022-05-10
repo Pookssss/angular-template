@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="item-center">
+    <div class="img-logo-center">
+      <img
+        nz-image
+        width="200px"
+        height="200px"
+        nzSrc="https://static-cdn.jtvnw.net/jtv_user_pictures/5b9d4607-d211-4488-b7f0-3709ea736741-profile_image-300x300.jpg"
+        alt=""
+      />
+    </div>
+
+    <form nz-form [formGroup]="validateForm" class="login-form">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+          <nz-input-group nzPrefixIcon="user">
+            <input
+              type="text"
+              nz-input
+              formControlName="userName"
+              placeholder="Username"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input
+              type="password"
+              nz-input
+              formControlName="password"
+              placeholder="Password"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <div nz-row class="login-form-margin">
+        <div nz-col [nzSpan]="12">
+          <label nz-checkbox formControlName="remember">
+            <span>Remember me</span>
+          </label>
+        </div>
+        <div nz-col [nzSpan]="12">
+          <a class="login-form-forgot">Forgot password</a>
+        </div>
+      </div>
+      <button
+        nz-button
+        class="login-form-button login-form-margin"
+        [nzType]="'primary'"
+        (click)="login()"
+      >
+        Log in
+      </button>
+      Or
+      <a>register now!</a>
+    </form>
+    <div class="copyright">
+      <a nz-button nzType="primary" nzDanger href="https://lifeforwhat.com">
+        LIFEFORWHAT
+      </a>
+      <br />
+      <br />
+      <h4>Copyright © {{ YearNow }}</h4>
+    </div>
+  </div>
+</div>
