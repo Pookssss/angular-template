@@ -40,38 +40,6 @@ export class AuthComponent implements OnInit {
     if(this.token = !null) {
       this.router.navigateByUrl('/home');
     }
-    // this.authorizedAccess = {} as AuthorizedAccess;
-    // this.verifying = true;
-    // this.activatedRoute.queryParamMap.subscribe((p) => {
-    //     this.authorizedAccess.client_key = p.get('client_key') || '';
-    //     this.authorizedAccess.merchant_id = p.get('merchant_id') || '';
-    //     if (this.authorizedAccess.client_key && this.authorizedAccess.client_key !== '' && this.authorizedAccess.merchant_id && this.authorizedAccess.merchant_id !== '') {
-    //         this.auth
-    //             .verifyByClientKey(
-    //                 this.authorizedAccess.client_key,
-    //                 this.authorizedAccess.merchant_id
-    //             )
-    //             .then(() => {
-    //                 this.router.navigateByUrl('/');
-    //             })
-    //             .catch((err) => {
-    //                 this.verifying = false;
-    //                 if (err.status === 401) {
-    //                     this.modalService.error({
-    //                         nzTitle: 'ผิดพลาด',
-    //                         nzContent: `บัญชีของคุณไม่ได้รับอนุญาตให้เข้าใช้งานระบบ`,
-    //                     });
-    //                 } else {
-    //                     this.modalService.error({
-    //                         nzTitle: 'ผิดพลาด',
-    //                         nzContent: `ระบบมีปัญหา ${JSON.stringify(err)}`,
-    //                     });
-    //                 }
-    //             });
-    //     } else {
-    //         this.verifying = false;
-    //     }
-    // });
     this.validateForm = this.fb.group({
       userName: [null, [Validators.required]],
       password: [null, [Validators.required]],
@@ -88,7 +56,6 @@ export class AuthComponent implements OnInit {
       if (this.validateForm.controls['userName'].value === 'admin' && this.validateForm.controls['password'].value === 'p@ssw0rd') {
         localStorage.setItem('token', 'ABCDEFG')
         this.router.navigateByUrl('/home');
-        console.log("Test Auth");
       } else {
         localStorage.clear();
         this.msg.error('เข้าสู่ระบบไม่สำเร็จ กรุณาลองใหม่อีกครั้ง')

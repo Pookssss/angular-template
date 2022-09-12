@@ -17,6 +17,12 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     component: MainLayoutComponent
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule),
+    canActivate: [AuthGuard],
+    component: MainLayoutComponent
+  },
   { path: 'error', component: ErrorLayoutComponent, data: Err404 },
   { path: '**', redirectTo: 'error', pathMatch: 'full' },
 ];

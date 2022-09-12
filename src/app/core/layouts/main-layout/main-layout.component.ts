@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListMenuUser } from './menu';
 
 @Component({
   selector: 'app-main-layout',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class MainLayoutComponent implements OnInit {
 
   isCollapsed = false;
+  ListMenuUser = ListMenuUser;
+
+
 
 
   constructor() { }

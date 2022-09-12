@@ -34,6 +34,11 @@ import { NzImageModule } from 'ng-zorro-antd/image';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { BidiModule } from '@angular/cdk/bidi';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+
+
 
 @NgModule({
   imports: [
@@ -71,6 +76,10 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
     NzTagModule,
     BidiModule,
     NzToolTipModule,
+    NzBreadCrumbModule,
+    NzMenuModule,
+    NzTypographyModule,
+
 
   ],
   exports: [
@@ -108,6 +117,10 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
     NzTagModule,
     BidiModule,
     NzToolTipModule,
+    NzBreadCrumbModule,
+    NzMenuModule,
+    NzCarouselModule,
+    NzTypographyModule,
     
   ],
   providers: [NzModalService]

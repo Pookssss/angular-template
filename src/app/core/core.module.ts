@@ -11,19 +11,6 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 
 import { SharedModule } from '../shared/shared.module';
-
-
-// Ng Zorro
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzGridModule } from 'ng-zorro-antd/grid';
-import { NzCardModule } from 'ng-zorro-antd/card';
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzIconModule } from 'ng-zorro-antd/icon';
-import { NzAvatarModule } from 'ng-zorro-antd/avatar';
-import { NzMessageModule } from 'ng-zorro-antd/message';
-import { NzFormModule } from 'ng-zorro-antd/form';
-import { NzResultModule } from 'ng-zorro-antd/result';
-import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { ErrorLayoutComponent } from './layouts/error-layout/error-layout.component';
 
 registerLocaleData(en);
@@ -55,18 +42,6 @@ export const httpInterceptorProviders = [
     ReactiveFormsModule,
     RouterModule,
     SharedModule,
-
-    // Ng Zorro
-    NzLayoutModule,
-    NzGridModule,
-    NzCardModule,
-    NzButtonModule,
-    NzIconModule,
-    NzAvatarModule,
-    NzMessageModule,
-    NzFormModule,
-    NzResultModule,
-    NzMenuModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },
