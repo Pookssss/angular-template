@@ -18,6 +18,12 @@ const routes: Routes = [
     component: MainLayoutComponent
   },
   {
+    path: 'artist',
+    loadChildren: () => import('./features/artist/artist.module').then(m => m.ArtistModule),
+    canActivate: [AuthGuard],
+    component: MainLayoutComponent
+  },
+  {
     path: 'about',
     loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule),
     canActivate: [AuthGuard],

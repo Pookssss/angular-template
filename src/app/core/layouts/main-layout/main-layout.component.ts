@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ListMenuUser } from './menu';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-layout',
@@ -12,15 +14,20 @@ export class MainLayoutComponent implements OnInit {
   ListMenuUser = ListMenuUser;
 
 
-
-
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
   toggleCollapsed(): void {
     this.isCollapsed = !this.isCollapsed;
+  }
+
+  goto(link: string): void {
+    this.router.navigate([link]);
   }
 
 

@@ -1,45 +1,5 @@
-<div>
-  <nz-carousel nzAutoPlay>
-    <div
-      nz-carousel-content
-      *ngFor="let index of ListCarousels"
-      class="space-carousel"
-    >
-      <img style="border-radius: 8px" src="{{ index.url }}" alt="" />
-      <!-- <h3>{{ index.title }}</h3> -->
-    </div>
-  </nz-carousel>
-  <nz-divider [nzText]="TextMain"></nz-divider>
-  <ng-template #TextMain>
-    <span class="text-iu">이지은 | อี จี-อึน</span>
-  </ng-template>
-  <div class="">
-    <!-- <nz-card nzHoverable style="width: 240px" [nzCover]="coverTemplate">
-      <nz-card-meta
-        nzTitle="Europe Street beat"
-        nzDescription="www.instagram.com"
-      ></nz-card-meta>
-    </nz-card> -->
-
-    <ng-template #coverTemplate>
-      <img
-        style="border-radius: 8px"
-        alt="example"
-        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-      />
-    </ng-template>
-
-    <div style="background: #00000000; padding: 0">
-      <div nz-row [nzGutter]="8">
-        <div nz-col [nzSpan]="4" *ngFor="let index of ListCard">
-          <nz-card nzHoverable [nzCover]="coverTemplate">
-            <nz-card-meta
-              nzTitle="Europe Street beat"
-              nzDescription="www.instagram.com"
-            ></nz-card-meta>
-          </nz-card>
-        </div>
-      </div>
-    </div>
+<div style="width: 100%; height: 150px; background-color: #bf5a5a">
+  <div style="text-align: center">
+    <h2>HOME</h2>
   </div>
 </div>

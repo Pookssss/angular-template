@@ -33,6 +33,13 @@ export const ListMenuUser: MenuUser | any = [
         ],
         active: false,
     },
+    {
+        title: 'Artist',
+        icon: 'dashboard',
+        link: '/artist',
+        children: [],
+        active: check(),
+    },
 ];
 
 function check() {

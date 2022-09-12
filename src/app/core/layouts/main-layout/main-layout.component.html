@@ -6,7 +6,7 @@
         <div class="logo"></div>
         <ul nz-menu nzTheme="dark" nzMode="horizontal">
           <li nz-menu-item *ngFor="let i of ListMenuUser">
-            <a [routerLink]="i.link">{{ i.title }}</a>
+            <a (click)="goto(i.link)">{{ i.title }}</a>
           </li>
         </ul>
       </nz-header>
