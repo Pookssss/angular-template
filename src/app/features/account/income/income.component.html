@@ -1,0 +1,63 @@
+<div class="income-component">
+  <nz-table
+    #borderedTable
+    nzBordered
+    nzFooter="Footer"
+    [nzTitle]="income"
+    [nzData]="dataSet"
+  >
+    <thead>
+      <tr>
+        <th [nzWidth]="'250px'">รายการ</th>
+        <th [nzWidth]="'50px'">ประเภท</th>
+        <th [nzWidth]="'100px'" class="text-center">ราคา</th>
+        <th [nzWidth]="'200px'">หายเหตุ</th>
+        <th [nzWidth]="'200px'">หมวด</th>
+        <th [nzWidth]="'200px'">Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of borderedTable.data">
+        <td>{{ data.name }}</td>
+        <td>
+          {{ "รายรับ / รายจ่าย" }}
+        </td>
+        <td class="text-center">{{ data.age }}</td>
+        <td class="text-center">{{ data.age }}</td>
+        <td class="text-center">{{ data.age }}</td>
+        <td>{{ data.address }}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <ng-template #income>รายรับ</ng-template>
+  <!--  -->
+  <nz-divider nzText="<>"></nz-divider>
+  <!--  -->
+  <nz-table
+    #borderedTable
+    nzBordered
+    nzFooter="Footer"
+    [nzTitle]="outcome"
+    [nzData]="dataSet"
+  >
+    <thead>
+      <tr>
+        <th [nzWidth]="'250px'">รายการ</th>
+        <th [nzWidth]="'50px'">ประเภท</th>
+        <th [nzWidth]="'100px'" class="text-center">ราคา</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of borderedTable.data">
+        <td>{{ data.name }}</td>
+        <td>
+          {{ "รายรับ" }}
+        </td>
+        <td class="text-center">{{ data.age }}</td>
+        <td>{{ data.address }}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <ng-template #outcome>รายจ่าย</ng-template>
+</div>

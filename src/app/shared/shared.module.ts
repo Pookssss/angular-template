@@ -37,7 +37,7 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
-
+import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 
 
 @NgModule({
@@ -79,6 +79,7 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
     NzBreadCrumbModule,
     NzMenuModule,
     NzTypographyModule,
+    NzCollapseModule,
 
 
   ],
@@ -121,7 +122,8 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
     NzMenuModule,
     NzCarouselModule,
     NzTypographyModule,
-    
+    NzCollapseModule,
+
   ],
   providers: [NzModalService]
 })

@@ -7,41 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  array = [1, 2, 3, 4];
-
-  ListCarousels = [
+  panels = [
     {
-      title: 'IU',
-      url: "../../../assets/images/iu-1.jpg"
+      active: true,
+      name: 'This is panel header 1',
+      disabled: false
     },
     {
-      title: 'BlackPink',
-      url: "../../../assets/images/iu-2.jpg"
+      active: false,
+      disabled: false,
+      name: 'This is panel header 2'
     },
     {
-      title: 'Jisoo',
-      url: "../../../assets/images/iu-3.jpg"
-    },
-    {
-      title: 'Jisoo',
-      url: "../../../assets/images/iu-5.jpg"
-    },
-    {
-      title: 'Jisoo',
-      url: "../../../assets/images/iu-6.jpg"
-    },
-    {
-      title: 'Jisoo',
-      url: "../../../assets/images/iu-7.jpg"
-    },
-    {
-      title: 'Jisoo',
-      url: "../../../assets/images/iu-8.jpg"
-    },
-
-  ]
-
-  ListCard = [1, 2, 3, 4, 5, 6]
+      active: false,
+      disabled: true,
+      name: 'This is panel header 3'
+    }
+  ];
 
   constructor() { }
 

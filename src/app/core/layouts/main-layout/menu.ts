@@ -2,43 +2,82 @@ import { MenuUser } from '../_models/menu.model';
 
 export const ListMenuUser: MenuUser | any = [
     {
-        title: 'Home',
-        icon: 'dashboard',
+        title: 'Menu',
+        icon: 'appstore',
         link: '/home',
         children: [
             {
-                title: 'Default',
-                link: '/dashboard/default'
+                title: 'Home',
+                icon: 'user',
+                link: '/home',
+            },
+        ],
+        active: check(),
+    },
+    {
+        title: 'Dashboard',
+        icon: 'dashboard',
+        link: '/dashboard',
+        children: [
+            {
+                title: 'User',
+                icon: 'user',
+                link: '/dashboard',
             }
         ],
         active: check(),
     },
     {
-        title: 'About',
-        icon: 'appstore',
-        link: '/about',
+        title: 'Account',
+        icon: 'user',
+        link: '/account',
         children: [
             {
-                title: 'Button',
-                link: '/ui-element/button'
+                title: 'Calendar',
+                link: '/account/calendar',
             },
             {
-                title: 'Icon',
-                link: '/ui-element/icon'
-            },
-            {
-                title: 'Typography',
-                link: '/ui-element/typography'
-            },
+                title: 'In / Out',
+                link: '/account/income',
+            }
         ],
-        active: false,
+        active: check(),
     },
     {
-        title: 'Artist',
-        icon: 'dashboard',
+        title: 'Alert',
+        icon: 'notification',
         link: '/artist',
-        children: [],
-        active: check(),
+        children: [
+            {
+                title: 'User',
+                icon: 'user',
+                link: '/home',
+            },
+        ],
+    },
+    {
+        title: 'Setting',
+        icon: 'setting',
+        link: '/artist',
+        children: [
+            {
+                title: 'User',
+                icon: 'user',
+                link: '/home',
+            },
+        ],
+    },
+    {
+        title: 'Mail',
+        icon: 'mail',
+        link: '/artist',
+        children: [
+            {
+                title: 'User',
+                icon: 'user',
+                link: '/home',
+            },
+        ],
     },
 ];
 

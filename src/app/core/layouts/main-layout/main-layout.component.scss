@@ -6,95 +6,60 @@
 //     margin-bottom: 12px;
 // }
 
-
-.container {
-    max-width: 1680px;
-    margin: 0 auto;
-    background-color: #fff0;
+.space-layout {
+    // height: 100vh;
 }
 
-.ant-layout-header {
-    background-color: #8C3D20;
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
-ul.ant-menu {
-    background-color: #8C3D20;
-}
-
-ul.ant-menu li:hover {
-    background-color: #D9A25F;
-}
-
-ul.ant-menu li.ant-menu-item-selected {
-    background-color: #D9A25F;
-}
-
-.space-out {
-    // text-align: center;
-    // background-color: #BF6F41;
-    background-image: linear-gradient(to left top, #d9a25f, #d49858, #d08f52, #cb854c, #c67c47, #c67744, #c57142, #c56c40, #ca6940, #cf6641, #d46342, #d95f43);
-}
-
-nz-header {
-    // background: #88BFBF;
-}
-
-nz-footer {
-    background: #8C3D20;
-    color: #fff;
-}
-
-nz-footer {
-    line-height: 1.5;
-}
-
-nz-sider {
-    background: #3ba0e9;
-    color: #fff;
-    line-height: 120px;
-}
-
-nz-content {
-    background-color: #00000000;
-    color: #fff;
-    min-height: 120px;
-    line-height: 120px;
-    padding: 20px 0;
-}
-
-nz-layout {
-    margin-bottom: 48px;
-    background-color: #fff0;
-}
-
-nz-layout nz-layout,
-nz-layout:last-child {
-    margin: 0;
+.trigger:hover {
+    color: #1890ff;
 }
 
 .logo {
-    width: 120px;
-    height: 31px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 16px 24px 16px 0;
-    // padding: 0 5px 0 5px;
-    float: left;
+    // height: 32px;
+    // background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 16px 0;
 }
 
-[nz-menu] {
-    line-height: 64px;
+nz-header {
+    background: #fff;
+    padding: 0;
+}
+
+nz-content {
+    margin: 0 16px;
 }
 
 nz-breadcrumb {
     margin: 16px 0;
 }
 
+.inner-content {
+    padding: 24px;
+    background: #fff;
+    // height: 100%;
+    // position: relative;
+    // height: 100%;
+}
+
 nz-footer {
     text-align: center;
 }
 
-.inner-content {
-    background: #fff0;
-    // padding: 24px;
-    min-height: 100vh;
+
+
+@media (max-width: 768px) {
+    .header-responsive {
+        display: none;
+    }
 }

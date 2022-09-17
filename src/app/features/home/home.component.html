@@ -1,5 +1,19 @@
-<div style="width: 100%; height: 150px; background-color: #bf5a5a">
-  <div style="text-align: center">
-    <h2>HOME</h2>
+<div nz-row>
+  <div nz-col nzSpan="8">
+    <nz-collapse [nzExpandIconPosition]="'right'">
+      <nz-collapse-panel
+        [nzHeader]="'AA'"
+        [nzActive]="true"
+        [nzDisabled]="false"
+      >
+        <p style="margin: 0">
+          A dog is a type of domesticated animal. Known for its loyalty and
+          faithfulness, it can be found as a welcome guest in many households
+          across the world.
+        </p>
+      </nz-collapse-panel>
+    </nz-collapse>
   </div>
+  <div nz-col nzSpan="8"></div>
+  <div nz-col nzSpan="8"></div>
 </div>
